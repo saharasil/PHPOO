@@ -1,23 +1,34 @@
 <?php
 
- class Vehicule{
+abstract class Vehicule{
     
-   public function demarrer(){
-        return 'je démarre';
-    }
+    abstract public function demarrer()
 
     
-    abstract public function carburant(){
-        return;
-    }
+    abstract public function carburant()
 
     public function nbTestsObligatoires(){
         return 100;
     }
 }
 
-class Renault{}
-class Dacia {}
+class Renault{
+    public function demarrer(){
+
+    }
+    abstract public function carburant(){
+
+    }
+
+}
+class Dacia {
+    public function demarrer(){
+
+    }
+    abstract public function carburant(){
+        
+    }
+}
 
 /* 
 1- Faire en sorte que je ne puisse pas instancier vehicule 

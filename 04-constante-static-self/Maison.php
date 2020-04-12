@@ -3,11 +3,11 @@
 
 /*
     -- Le mot static pour définir et préciser que la propriété ou la méthode appartient  seulement à la classe dans laquelle elle a été définie ( => ne vont pas appartenir à une instance de classe et par la suite à un objet qui stocke cette instance).
-    -- Les méthodes et lespropriétés STATIQUES vont avoir la même définition et la mêmevaleur pour toutes les instances d'une classe .
+    -- Les méthodes et les propriétés STATIQUES vont avoir la même définition et la même valeur pour toutes les instances d'une classe .
     -- On peut  accéder  à ces éléments sans avoir besoin d'instancier la classe .
     -- Depuis un objet : 
-            - Ilest impossible d'accéder à une propriété statique.
-            - Il est possible d'accéder à une méthode statique.
+            - Il est impossible d'accéder à une propriété statique.
+            
  */
 class Maison {
 
@@ -18,7 +18,7 @@ class Maison {
     private $nbPortes = 8; //appartient à l'objet.
 
     public static function getNbPieces(){ //méthode statique qui appartient à la classe
-        return self::$nbPieces;  // les "::" sont appelé "opérateurs de résolution de portée" ils remplacent le "->" puisque la ropriété $nbPieces est statique et appartient à la classe . 
+        return self::$nbPieces;  // les "::" sont appelés "opérateurs de résolution de portée" ils remplacent le "->" puisque la ropriété $nbPieces est statique et appartient à la classe . 
         //retourner une propriété de classe
         //self désigne la classe à l'intérieur de la classe
 
@@ -63,7 +63,7 @@ echo Maison::$espaceTerrain;
 //Eprérience 1 : accéder une propriété statique depuis l'objet 
     // echo $maison1->espaceTerrain : affiche erreur 
 
-//Expérience 2 : accéder une méthode non satitic depuis la class 
+//Expérience 2 : accéder une propriété non satatique depuis la class 
     // echo Maison::$couleur; ERREUR
 
 // Expérience 3 : accéder une méthode non statique depuis la classe

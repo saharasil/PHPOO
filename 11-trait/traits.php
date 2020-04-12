@@ -22,7 +22,7 @@ class Site{
     use tPanier, tMembre; // le mot use importe le contenu des traits
 }
 
-$site1 = new
+$site1 = new Site;
 var_dump ($site1);
 var_dump(get_class_methods($site1));
-//une classe ne peut héritet que d'une SEULE CLASSE , par contre elle peut utiliser (USE)plusieurs traits.
+//une classe ne peut hériter que d'une SEULE CLASSE , par contre elle peut utiliser (USE) plusieurs traits.

@@ -24,9 +24,9 @@ $obj2 = Singleton::getInstance(); // on essaye d'instancier un nouvel objet
 var_dump($obj2); // on remarque que c'est le même objet 
 
 /*
-L'objectif de singleton est d'avoir un objet unique tout lelong du projet 
+L'objectif de singleton est d'avoir un objet unique tout le long du projet 
 ex :
     1- connexion à la BDD
-    2- une entité correspondant à une persionne physique 
+    2- une entité correspondant à une personne physique 
 
 

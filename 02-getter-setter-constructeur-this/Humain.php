@@ -1,6 +1,6 @@
 <?php
 
-/* Visibilité
+/* les niveau de Visibilité :
  - public :  accessible de partout (intérieur et extérieur de la classe).
  - private : accessible uniquement à l'intérieur de la classe.
  - protected : accessible à l'intérieur de la classe et dans les classes héritières

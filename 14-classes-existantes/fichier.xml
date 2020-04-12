@@ -1,0 +1,7 @@
+<?xml version ="1.0"  encoding="UTF-8"?>
+<personne>
+    <nom>Durand</nom>
+    <prenom>Toto</prenom>
+    <email>toto.durand@free.fr</email>
+    <ville>Paris</ville>
+</personne>

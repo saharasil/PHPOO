@@ -1,16 +1,21 @@
 <?php
-
-abstract class Joueur{
+// Une classe abstraite est une classe qui ne va pas pouvoir être instanciée directement, c’est-à-dire qu’on ne va pas pouvoir manipuler directement.
+//Dès qu’une classe possède une méthode abstraite, il va falloir la déclarer comme classes abstraite.
+abstract class Joueur{ //on définie une classe abstraite avec le mot clef "abstract".
+    //on peut avoir des fonction classique (non abstraite ) et des propriétés en plus de les méthodes abstraites
     public function seConnecter(){
         return $this->EtreMajeur();
     }
-    abstract public function EtreMajeur();  // les méthodes abstraites n'ont pas de corps/contenu
+     // les méthodes abstraites n'ont pas de corps/contenu
+    abstract public function EtreMajeur(); 
     abstract public function Devise();
 }
 
 // $j = new Joueur; Une classe abstraite n'est pas instanciable
-
+// Donc on est obligé d'étendre la classe parente 
+// Les méthodes déclarées comme abstraites dans la classe parent doivent obligatoirement être définies dans la classe enfant avec des signatures (nom et paramètres) correspondantes.
 class JoueurFr extends Joueur{
+    // on implémente la méthode dans la classe fille sans le mot clef abstarct
     public function EtreMajeur(){ // imposée par la classe dont j'hérite
         return 18;
     }

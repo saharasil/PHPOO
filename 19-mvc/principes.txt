@@ -1,0 +1,35 @@
+En procédural, il peut parfois être diffcicile d'organiser son code, car on mélange PHP et HTML
+Le concept MVC va permettre d'effectuer une séparation des couches et des languages
+
+1- Modèle (Model) (Echange avec la BDD - SQL)
+2- Vue (View) (Affiche et présentation des données - HTML/CSS/JS)
+3- Contôleur (Controller) (Traitement PHP, contrôles)
+
+exemple : l'internaute souhaite voir tous les pantalons 
+
+a- le controller  va demander au modèle d'aller chercher les pantalons
+b- le model va faire une requête SQL filtrant sur la colonne
+
+
+
+
+
+////////////////////////////
+-Projet
+    - App/
+    - Model/
+        -MembreModel.php (EntityRepository)
+    - Controller/
+        MembreController.php
+    - View/
+        - membre/
+            - connexion.htm
+            - inscription.HTML
+            - profil.HTML
+
+        - style.CSS
+        - header.HTML
+        - footer.html
+        - function.js
+    - index.php
+    -autoload.php

@@ -30,7 +30,7 @@ class C{
 $obj = new C();
 var_dump($obj);
 
-// Façon 1 : Pour atteindre les méthodes direBonjour() et direHello(), je peux passer par mespropriétés qui sont des objets
+// Façon 1 : Pour atteindre les méthodes direBonjour() et direHello(), je peux passer par mes propriétés qui sont des objets
 // l'enchainement des flévhes m'indique que j'ai bien un objet dans un objet 
 echo $obj->objA->direBonjour();
 echo '<hr>';

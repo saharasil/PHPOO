@@ -1,7 +1,7 @@
 <?php
 // class = plan de fabrication
 //Propriété dans un objet = variable
-//fonction dans un objet = méthodes rôle: obtenir ou mettre à jour les valeurs de nos propriètés
+//fonction dans une classe = méthodes -> rôle: obtenir ou mettre à jour les valeurs de nos propriètés
 class Panier {
 
     public $nbProduits; //une proprièté de la class Panier

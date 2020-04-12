@@ -1,8 +1,10 @@
 <?php
 class Membre {
+
     public $pseudo;
     public $mdp;
     public function ecrireMessage(){}
+
 }
 
 
@@ -12,9 +14,13 @@ class Moderateur extends Membre { // la classe Modérateur hérite grâce à ext
     public function bannirUtilisateur(){}
 }
 
-// Laclasse Administrateur  héritant de Modérateur qui luimêmehérite de Membre contiendra touts les propriétés et méthodes "accumulées"
+
+// Etendre à nouveau une classe étendue
+//l’héritage va alors traverser les générations : les classes filles de Moderateur hériteront des méthodes et propriétés non privées de  Moderateur mais également de celles de leur grand parent Membre.
+
+
 class Administrateur extends Moderateur{
-    
+    // La classe Administrateur  héritant de Modérateur qui lui même hérite de Membre contiendra touts les propriétés et méthodes "accumulées"
     public function nommerModerateur(){}
     public function accesBackoffice(){}
 }
